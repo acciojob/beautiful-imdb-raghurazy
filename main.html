@@ -1,16 +1,51 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Movie Detail - IMDb Style</title>
+<style>
+  body {
+    margin: 0;
+    background-color: #141414;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    height: 100vh;
+    overflow: hidden;
+  }
+  .moviePic {
+    display: block;
+    height: 400px;
+    width: 300px;
+    opacity: 0.85;
+    margin: 2rem auto 0 auto;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.8);
+    transition: opacity 0.3s ease;
+  }
+  .moviePic:hover {
+    opacity: 1;
+  }
+  .movieDetail {
+    position: relative;
+    top: 20px;
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #ddd;
+    user-select: none;
+  }
+</style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+<img src="https://m.media-amazon.com/images/I/51zUbui+gbL._AC_SY679_.jpg" alt="Inception Movie Poster" class="moviePic" />
+
+<p class="movieDetail">
+  Inception is a mind-bending thriller directed by Christopher Nolan. It delves into the dream world where a skilled thief enters people’s subconscious to plant ideas while battling his own troubled past.
+</p>
 
 </body>
-
 </html>
